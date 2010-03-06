@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.0" name="Percidae.exe" publicKeyToken="d6c163d49a35e087" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Percidae" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Percidae.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site">
+          <IPermission class="System.Security.Permissions.FileDialogPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Access="Open" />
+          <IPermission class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Allowed="ApplicationIsolationByUser" UserQuota="512000" />
+          <IPermission class="System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Read="SYSTEM\CurrentControlSet\Control\Session Manager\Environment" Write="SYSTEM\CurrentControlSet\Control\Session Manager\Environment" />
+          <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="Execution" />
+          <IPermission class="System.Security.Permissions.UIPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Window="SafeTopLevelWindows" Clipboard="OwnClipboard" />
+          <IPermission class="System.Drawing.Printing.PrintingPermission, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="1" Level="SafePrinting" />
+        </PermissionSet>
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Percidae.exe" size="17408">
+      <assemblyIdentity name="Percidae" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>LXcAL1SPcO8UWIZSoFmPAPbu1jc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=AYA\Robert" issuerKeyHash="1bbba936287bf4a3f815c150e8fbc72588eac019" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>aRealq755HhKxJGkSG/fdFwcOmQ=</DigestValue></Reference></SignedInfo><SignatureValue>o7pGH5Pa/teLymM+6UcZbZGW7bzZ+ryb5XLQP4Fr0O9/AaxZ6+EmohtbUZDPiBH4A9vJN1s95eH77/x1J8hDXUBUx29Nz2Y2KpQTKdiDHAEUIH+vfcAeDVQLOv37wQ/FOTqTdroDJW8F7teJMfSoDCbPs2LkOgPacRiuowcgtgg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>puujytiLyFAMfOHS7MPqXrLUxBZvBO9coxd61SzEuFZhKQ27p5RZgOkMnD6a6mNSX5delsGPMZvJKDMzu7g+LrcckiB0YstxGa0+z0lu9Uhd3AYaif/Btq6g3XmV3xaheqgEAambwXNMkFvtvPzkoc5RAHGaP3bpTovaNiVBCyc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="643a1c5c74df6f48a491c44a78e4f9ae969a1769" Description="" Url=""><as:assemblyIdentity version="1.0.0.0" name="Percidae.exe" publicKeyToken="d6c163d49a35e087" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AYA\Robert</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>roOBNlYJMB16tUpJtq9KdO0AtuQ=</DigestValue></Reference></SignedInfo><SignatureValue>R3pgbM3s1CQqQG3rxu+QPTJ/YEe+EujbWXZm0F9nuK0HB05WyRU6d/5cN9PYjaMqmuVj1XULYlMhTVrX7K/dewpLlgpk1Zr4LaMuDgvVL3OdmGLBEqau9C2RTB1dVmGnF4hFsYNI1b0jA6eAJO9D1FUvYcClw4/DYD9DV3vrgd0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>puujytiLyFAMfOHS7MPqXrLUxBZvBO9coxd61SzEuFZhKQ27p5RZgOkMnD6a6mNSX5delsGPMZvJKDMzu7g+LrcckiB0YstxGa0+z0lu9Uhd3AYaif/Btq6g3XmV3xaheqgEAambwXNMkFvtvPzkoc5RAHGaP3bpTovaNiVBCyc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQXu5F51ZwTpdDz6rLvekepjANBgkqhkiG9w0BAQUFADAfMR0wGwYDVQQDHhQAQQBZAEEAXABSAG8AYgBlAHIAdDAeFw0xMDAzMDYxNTQ5NTBaFw0xMTAzMDYyMTQ5NTBaMB8xHTAbBgNVBAMeFABBAFkAQQBcAFIAbwBiAGUAcgB0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCm66PK2IvIUAx84dLsw+pestTEFm8E71yjF3rVLMS4VmEpDbunlFmA6QycPprqY1Jfl16WwY8xm8koMzO7uD4utxySIHRiy3EZrT7PSW71SF3cBhqJ/8G2rqDdeZXfFqF6qAQBqZvBc0yQW+28/OShzlEAcZo/dulOi9o2JUELJwIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAHAomSp+atgmveBbQklGTTW8MyVBYYiOXr4JvIY6UqV24LyRWm2mGb8D+Xaa06uEDZEbutBE0CHpT4lnWofU3j5rgRxPVq5t3pmdZegNifMhkF1iJvaJ2x0UUYWpBcTeSBYgLjrVECrFCRGs8fiQywoPBIwZl0SGlknr9lA1k+x6</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

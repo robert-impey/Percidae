@@ -1,0 +1,15 @@
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\bin\Debug\Percidae.exe
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\bin\Debug\Percidae.pdb
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\bin\Debug\Percidae.xml
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\obj\Debug\Percidae.MainForm.resources
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\obj\Debug\Percidae.Resources.resources
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\obj\Debug\Percidae.vbproj.GenerateResource.Cache
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\obj\Debug\Percidae.exe
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\obj\Debug\Percidae.xml
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\obj\Debug\Percidae.pdb
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\bin\Debug\Percidae.exe.manifest
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\bin\Debug\Percidae.application
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\obj\Debug\Percidae.TrustInfo.xml
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\obj\Debug\Percidae.exe.manifest
+C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\obj\Debug\Percidae.application
