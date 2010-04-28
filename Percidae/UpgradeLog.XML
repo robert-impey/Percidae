@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Percidae">
+</Property><Property Name="Solution File" Value="C:\Users\Robert\Documents\programming-projects\gui\percidae\Percidae\Percidae.sln">
+</Property><Property Name="Date" Value="28 April 2010">
+</Property><Property Name="Time" Value="22:30">
+</Property></Properties><Event ErrorLevel="0" Project="Percidae" Source="Percidae.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Percidae" Source="Percidae.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Percidae.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Percidae.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Percidae" Source="Percidae.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="3" Project="Percidae" Source="My Project\app.manifest" Description="The following project has been changed to Full Trust during project migration: Percidae. The permission set requested by the application exceeded the permissions allowed by the Internet or Local Intranet zone. To continue using partial trust, define your custom permission set in the Security Page of the Project Designer.">
+</Event><Event ErrorLevel="1" Project="Percidae" Source="My Project\app.manifest" Description="The following project has been changed to Full Trust during project migration: Percidae. The permission set requested by the application exceeded the permissions allowed by the Internet or Local Intranet zone. To continue using partial trust, define your custom permission set in the Security Page of the Project Designer.">
+</Event></UpgradeLog>
