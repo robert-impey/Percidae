@@ -22,20 +22,25 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PathTextBox = New System.Windows.Forms.TextBox
-        Me.SaveButton = New System.Windows.Forms.Button
+        Me.PathTextBox = New System.Windows.Forms.TextBox()
+        Me.SaveButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'PathTextBox
         '
+        Me.PathTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PathTextBox.Location = New System.Drawing.Point(12, 12)
         Me.PathTextBox.Multiline = True
         Me.PathTextBox.Name = "PathTextBox"
+        Me.PathTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.PathTextBox.Size = New System.Drawing.Size(552, 476)
         Me.PathTextBox.TabIndex = 0
         '
         'SaveButton
         '
+        Me.SaveButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SaveButton.Location = New System.Drawing.Point(489, 494)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.Size = New System.Drawing.Size(75, 23)
