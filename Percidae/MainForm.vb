@@ -3,27 +3,43 @@ Imports System
 Imports System.Text
 Imports System.Security.Permissions
 
-<Assembly: RegistryPermissionAttribute( _
-    SecurityAction.RequestMinimum, ViewAndModify:="HKEY_LOCAL_MACHINE")> 
+<Assembly: RegistryPermissionAttribute(SecurityAction.RequestMinimum, ViewAndModify:="HKEY_LOCAL_MACHINE")> 
 
 Public Class MainForm
+#Region "Constants"
+
+    Private Const environmentKeyName As String = "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"
+
+#End Region
+
+#Region "Events"
 
     Private Sub MainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         FillPathTextBox()
-
-        'Check that the user has the appropriate privileges
     End Sub
+
+    Private Sub SaveButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveButton.Click
+        SavePath()
+
+        FillPathTextBox()
+
+        MsgBox("Path saved!")
+    End Sub
+
+#End Region
+
+#Region "Subs"
 
     Private Sub FillPathTextBox()
         Dim lmRegistryKey As RegistryKey = Registry.LocalMachine
-        Dim pathKey As RegistryKey = lmRegistryKey.OpenSubKey("SYSTEM\CurrentControlSet\Control\Session Manager\Environment")
+        Dim pathKey As RegistryKey = lmRegistryKey.OpenSubKey(environmentKeyName)
 
-        Dim path As String = pathKey.GetValue("Path")
+        Dim path As String = CStr(pathKey.GetValue("Path"))
         pathKey.Close()
         lmRegistryKey.Close()
 
         'Parse the path
-        Dim folders As Array = path.Split(";")
+        Dim folders As Array = path.Split(CChar(";"))
 
         Dim foldersStringBuilder As New StringBuilder
         For Each folder As String In folders
@@ -37,10 +53,10 @@ Public Class MainForm
         Me.PathTextBox.Text = foldersStringBuilder.ToString
     End Sub
 
-    Private Sub SaveButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveButton.Click
+    Private Sub SavePath()
         Dim pathStringBuilder As New StringBuilder
 
-        Dim folders As Array = Me.PathTextBox.Text.Split(";")
+        Dim folders As Array = Me.PathTextBox.Text.Split(CChar(";"))
 
         For Each folder As String In folders
             folder = folder.Trim
@@ -50,17 +66,13 @@ Public Class MainForm
             End If
         Next
 
-        'MsgBox(pathStringBuilder.ToString)
-
         Dim lmRegistryKey As RegistryKey = Registry.LocalMachine
-        Dim pathKey As RegistryKey = lmRegistryKey.OpenSubKey("SYSTEM\CurrentControlSet\Control\Session Manager\Environment", True)
+        Dim pathKey As RegistryKey = lmRegistryKey.OpenSubKey(environmentKeyName, True)
 
         pathKey.SetValue("Path", pathStringBuilder.ToString)
         pathKey.Close()
         lmRegistryKey.Close()
-
-        FillPathTextBox()
-
-        MsgBox("Path saved!")
     End Sub
+
+#End Region
 End Class
