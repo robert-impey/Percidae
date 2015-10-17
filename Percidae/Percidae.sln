@@ -1,7 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Basic Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Percidae", "Percidae.vbproj", "{A45426AD-0397-4C85-89A1-F53939DE9BF9}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Percidae.Folders", "..\Percidae.Folders\Percidae.Folders.vbproj", "{9BA9AED9-C3C6-4552-85CE-3D67402CB1B2}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Percidae.Folders.Test", "Percidae.Folders.Test\Percidae.Folders.Test.vbproj", "{B1F47BFC-77D2-476F-A76D-D3ACBD9B08F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +19,14 @@ Global
 		{A45426AD-0397-4C85-89A1-F53939DE9BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A45426AD-0397-4C85-89A1-F53939DE9BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A45426AD-0397-4C85-89A1-F53939DE9BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA9AED9-C3C6-4552-85CE-3D67402CB1B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA9AED9-C3C6-4552-85CE-3D67402CB1B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA9AED9-C3C6-4552-85CE-3D67402CB1B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA9AED9-C3C6-4552-85CE-3D67402CB1B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F47BFC-77D2-476F-A76D-D3ACBD9B08F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F47BFC-77D2-476F-A76D-D3ACBD9B08F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F47BFC-77D2-476F-A76D-D3ACBD9B08F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F47BFC-77D2-476F-A76D-D3ACBD9B08F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

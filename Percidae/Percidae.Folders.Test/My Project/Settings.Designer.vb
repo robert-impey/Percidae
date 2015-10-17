@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.Percidae.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Percidae.Folders.Test.My.MySettings
             Get
-                Return Global.Percidae.My.MySettings.Default
+                Return Global.Percidae.Folders.Test.My.MySettings.Default
             End Get
         End Property
     End Module
